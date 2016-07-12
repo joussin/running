@@ -117,7 +117,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             mapView.setRegion(region, animated: false)
         } else {
             if followStatus == .Follow {
-                mapView.setCenterCoordinate(userCurrentLocation!.coordinate, animated: true)  
+                mapView.setCenterCoordinate(userCurrentLocation!.coordinate, animated: true)
             }
         }
     }

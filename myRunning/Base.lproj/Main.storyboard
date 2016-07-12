@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -53,6 +58,12 @@
                                     <action selector="followButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="4e0-3b-AjM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-VQ-hNx">
+                                <rect key="frame" x="243" y="64" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -67,6 +78,11 @@
                             <constraint firstItem="Uv7-jC-O08" firstAttribute="leading" secondItem="uvO-gX-p8e" secondAttribute="trailing" constant="21" id="hYl-I9-NgL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uv7-jC-O08" secondAttribute="bottom" constant="20" id="yaI-9G-dfB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xsh-VQ-hNx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="followButton" destination="bCZ-5f-0e9" id="nwE-Qm-KsY"/>
