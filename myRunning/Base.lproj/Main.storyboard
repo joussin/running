@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="myRunning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zqY-xL-wG9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-gX-p8e">
+                                <rect key="frame" x="264" y="532" width="71" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRc-xP-KOw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv7-jC-O08">
+                                <rect key="frame" x="356" y="532" width="67" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="MaG-kM-STW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCZ-5f-0e9">
+                                <rect key="frame" x="516" y="28" width="64" height="30"/>
+                                <state key="normal" title="UnFollow">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="followButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="4e0-3b-AjM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uvO-gX-p8e" secondAttribute="bottom" constant="20" id="7YL-NG-9Uc"/>
+                            <constraint firstAttribute="trailing" secondItem="bCZ-5f-0e9" secondAttribute="trailing" constant="20" id="Amm-AJ-IdK"/>
+                            <constraint firstItem="bCZ-5f-0e9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="O1p-Av-B0p"/>
+                            <constraint firstItem="uvO-gX-p8e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QWd-Lq-5yz"/>
+                            <constraint firstAttribute="trailing" secondItem="zqY-xL-wG9" secondAttribute="trailing" id="Vpo-wd-wz2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zqY-xL-wG9" secondAttribute="bottom" id="XGN-TN-cdq"/>
+                            <constraint firstItem="zqY-xL-wG9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="d26-4F-mRb"/>
+                            <constraint firstItem="zqY-xL-wG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gZV-Ll-lfy"/>
+                            <constraint firstItem="Uv7-jC-O08" firstAttribute="leading" secondItem="uvO-gX-p8e" secondAttribute="trailing" constant="21" id="hYl-I9-NgL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uv7-jC-O08" secondAttribute="bottom" constant="20" id="yaI-9G-dfB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="followButton" destination="bCZ-5f-0e9" id="nwE-Qm-KsY"/>
+                        <outlet property="mapView" destination="zqY-xL-wG9" id="U6e-bZ-ZiX"/>
+                        <outlet property="startButton" destination="uvO-gX-p8e" id="iho-lB-DD2"/>
+                        <outlet property="stopButton" destination="Uv7-jC-O08" id="gd5-bs-jsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="325"/>
+        </scene>
+    </scenes>
+</document>
