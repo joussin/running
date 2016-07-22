@@ -16,8 +16,9 @@ protocol TimelineDelegate {
 class Timeline : NSObject {
     
     var delegate : TimelineDelegate?
-     var timer : NSTimer!
+    var timer : NSTimer!
     var step: Double
+    
     init(step: Double) {
         self.step = step
     }
@@ -28,12 +29,9 @@ class Timeline : NSObject {
     
     func stop () {
         timer.invalidate()
-     }
+    }
     
     func update() {
          delegate?.update()
     }
- 
-    
-    
 }

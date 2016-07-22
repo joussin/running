@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E293C7D41D3FFF07004FF158 /* CustomOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293C7D31D3FFF07004FF158 /* CustomOverlay.swift */; };
+		E293C7D61D414C3E004FF158 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293C7D51D414C3E004FF158 /* Color.swift */; };
+		E293C7D81D414C6D004FF158 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293C7D71D414C6D004FF158 /* Session.swift */; };
+		E293C7DA1D414F32004FF158 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293C7D91D414F32004FF158 /* CustomAnnotation.swift */; };
+		E2E418371D42A5E0008873A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E418361D42A5E0008873A1 /* Assets.xcassets */; };
+		E2E418391D42B311008873A1 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E418381D42B311008873A1 /* Timeline.swift */; };
+		E2E4183B1D42C2E6008873A1 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4183A1D42C2E6008873A1 /* Enum.swift */; };
+		E2E4183D1D42D3A4008873A1 /* LocationManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4183C1D42D3A4008873A1 /* LocationManagerExtension.swift */; };
+		E2E4183F1D42D485008873A1 /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4183E1D42D485008873A1 /* MapViewExtension.swift */; };
 		E2EB49A11D3565070090DCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB49A01D3565070090DCD7 /* AppDelegate.swift */; };
 		E2EB49A31D3565070090DCD7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB49A21D3565070090DCD7 /* MapViewController.swift */; };
 		E2EB49A61D3565070090DCD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EB49A41D3565070090DCD7 /* Main.storyboard */; };
-		E2EB49A81D3565070090DCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EB49A71D3565070090DCD7 /* Assets.xcassets */; };
 		E2EB49AB1D3565070090DCD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EB49A91D3565070090DCD7 /* LaunchScreen.storyboard */; };
 		E2EB49B31D3566740090DCD7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2EB49B21D3566740090DCD7 /* MapKit.framework */; };
 		E2EB49B51D3590D50090DCD7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB49B41D3590D50090DCD7 /* DateExtension.swift */; };
@@ -18,11 +26,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E293C7D31D3FFF07004FF158 /* CustomOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlay.swift; sourceTree = "<group>"; };
+		E293C7D51D414C3E004FF158 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E293C7D71D414C6D004FF158 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		E293C7D91D414F32004FF158 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		E2E418361D42A5E0008873A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2E418381D42B311008873A1 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		E2E4183A1D42C2E6008873A1 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		E2E4183C1D42D3A4008873A1 /* LocationManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerExtension.swift; sourceTree = "<group>"; };
+		E2E4183E1D42D485008873A1 /* MapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
 		E2EB499D1D3565070090DCD7 /* myRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EB49A01D3565070090DCD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2EB49A21D3565070090DCD7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E2EB49A51D3565070090DCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2EB49A71D3565070090DCD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EB49AA1D3565070090DCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2EB49AC1D3565070090DCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2EB49B21D3566740090DCD7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -42,6 +58,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E293C7D21D3FFEF4004FF158 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2E418401D42D514008873A1 /* Map */,
+				E2EB49B41D3590D50090DCD7 /* DateExtension.swift */,
+				E293C7D51D414C3E004FF158 /* Color.swift */,
+				E293C7D71D414C6D004FF158 /* Session.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E2E418401D42D514008873A1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E2E4183A1D42C2E6008873A1 /* Enum.swift */,
+				E2E418381D42B311008873A1 /* Timeline.swift */,
+				E293C7D31D3FFF07004FF158 /* CustomOverlay.swift */,
+				E293C7D91D414F32004FF158 /* CustomAnnotation.swift */,
+				E2E4183C1D42D3A4008873A1 /* LocationManagerExtension.swift */,
+				E2E4183E1D42D485008873A1 /* MapViewExtension.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		E2EB49941D3565070090DCD7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +102,14 @@
 		E2EB499F1D3565070090DCD7 /* myRunning */ = {
 			isa = PBXGroup;
 			children = (
+				E293C7D21D3FFEF4004FF158 /* Classes */,
 				E2EB49B61D359A2A0090DCD7 /* FontAwesome.otf */,
-				E2EB49B41D3590D50090DCD7 /* DateExtension.swift */,
 				E2EB49A01D3565070090DCD7 /* AppDelegate.swift */,
 				E2EB49A21D3565070090DCD7 /* MapViewController.swift */,
 				E2EB49A41D3565070090DCD7 /* Main.storyboard */,
-				E2EB49A71D3565070090DCD7 /* Assets.xcassets */,
 				E2EB49A91D3565070090DCD7 /* LaunchScreen.storyboard */,
 				E2EB49AC1D3565070090DCD7 /* Info.plist */,
+				E2E418361D42A5E0008873A1 /* Assets.xcassets */,
 			);
 			path = myRunning;
 			sourceTree = "<group>";
@@ -134,7 +174,7 @@
 			files = (
 				E2EB49B71D359A790090DCD7 /* FontAwesome.otf in Resources */,
 				E2EB49AB1D3565070090DCD7 /* LaunchScreen.storyboard in Resources */,
-				E2EB49A81D3565070090DCD7 /* Assets.xcassets in Resources */,
+				E2E418371D42A5E0008873A1 /* Assets.xcassets in Resources */,
 				E2EB49A61D3565070090DCD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E4183D1D42D3A4008873A1 /* LocationManagerExtension.swift in Sources */,
 				E2EB49A31D3565070090DCD7 /* MapViewController.swift in Sources */,
+				E293C7DA1D414F32004FF158 /* CustomAnnotation.swift in Sources */,
+				E2E418391D42B311008873A1 /* Timeline.swift in Sources */,
 				E2EB49B51D3590D50090DCD7 /* DateExtension.swift in Sources */,
+				E2E4183F1D42D485008873A1 /* MapViewExtension.swift in Sources */,
+				E293C7D81D414C6D004FF158 /* Session.swift in Sources */,
+				E2E4183B1D42C2E6008873A1 /* Enum.swift in Sources */,
+				E293C7D41D3FFF07004FF158 /* CustomOverlay.swift in Sources */,
+				E293C7D61D414C3E004FF158 /* Color.swift in Sources */,
 				E2EB49A11D3565070090DCD7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +350,7 @@
 				E2EB49B11D3565070090DCD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

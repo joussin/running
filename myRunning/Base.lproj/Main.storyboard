@@ -24,6 +24,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zqY-xL-wG9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lf7-4X-7bW"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-gX-p8e">
                                 <rect key="frame" x="264" y="532" width="71" height="48"/>
@@ -58,10 +61,18 @@
                                     <action selector="followButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="4e0-3b-AjM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om6-UU-CFt">
+                                <rect key="frame" x="231.5" y="21" width="138" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsh-VQ-hNx">
                                 <rect key="frame" x="243" y="64" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -69,11 +80,13 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uvO-gX-p8e" secondAttribute="bottom" constant="20" id="7YL-NG-9Uc"/>
                             <constraint firstAttribute="trailing" secondItem="bCZ-5f-0e9" secondAttribute="trailing" constant="20" id="Amm-AJ-IdK"/>
+                            <constraint firstItem="zqY-xL-wG9" firstAttribute="top" secondItem="om6-UU-CFt" secondAttribute="bottom" constant="-58" id="DeP-og-NjD"/>
                             <constraint firstItem="bCZ-5f-0e9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="O1p-Av-B0p"/>
                             <constraint firstItem="uvO-gX-p8e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QWd-Lq-5yz"/>
                             <constraint firstAttribute="trailing" secondItem="zqY-xL-wG9" secondAttribute="trailing" id="Vpo-wd-wz2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zqY-xL-wG9" secondAttribute="bottom" id="XGN-TN-cdq"/>
                             <constraint firstItem="zqY-xL-wG9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="d26-4F-mRb"/>
+                            <constraint firstItem="om6-UU-CFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fwi-ey-SmS"/>
                             <constraint firstItem="zqY-xL-wG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gZV-Ll-lfy"/>
                             <constraint firstItem="Uv7-jC-O08" firstAttribute="leading" secondItem="uvO-gX-p8e" secondAttribute="trailing" constant="21" id="hYl-I9-NgL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uv7-jC-O08" secondAttribute="bottom" constant="20" id="yaI-9G-dfB"/>
@@ -85,6 +98,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="chronoLabel" destination="om6-UU-CFt" id="hT0-1A-PIc"/>
                         <outlet property="followButton" destination="bCZ-5f-0e9" id="nwE-Qm-KsY"/>
                         <outlet property="mapView" destination="zqY-xL-wG9" id="U6e-bZ-ZiX"/>
                         <outlet property="startButton" destination="uvO-gX-p8e" id="iho-lB-DD2"/>

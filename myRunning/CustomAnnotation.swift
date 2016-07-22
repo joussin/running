@@ -10,19 +10,20 @@ import Foundation
 import MapKit
 
 
-enum AnnotationType {
-    case Stop, Start, Segment
-}
 
 
 class CustomAnnotation : NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
     var subtitle: String?
+    var type : AnnotationType
+    var text : String?
     
-    init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
+    init(coordinate: CLLocationCoordinate2D, type: AnnotationType, text : String?) {
         self.coordinate = coordinate
-        self.title = title
-        self.subtitle = subtitle
+        self.type = type
+        if text != nil {
+            self.text = text
+        }
     }
 }

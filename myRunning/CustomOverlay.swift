@@ -10,9 +10,11 @@ import Foundation
 import MapKit
 
 
-class WayOverlay : MKPolyline {
+
+class CustomOverlay : MKPolyline {
     
-    var color: UIColor? 
+    var color: UIColor?
+    var type : OverlayType?
     
     
 }

@@ -6,7 +6,7 @@
 	<array>
 		<string>FontAwesome</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Authorize to share your location ?</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>

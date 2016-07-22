@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import CoreLocation
+
+class Session {
+    var location = [CLLocation]()
+    var date = [NSDate]()
+    var section : Int = 0 //chaque session represente 100m
+}

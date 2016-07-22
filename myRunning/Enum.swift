@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+
+enum AnnotationType {
+    case Stop, Start, Segment
+}
+
+enum OverlayType {
+    case Way
+}
+
+
+enum SessionStatus {
+    case Stop, Start
+}
+
+enum FollowStatus {
+    case Follow, Unfollow
+}
